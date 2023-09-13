@@ -2,6 +2,6 @@ version: '3'
 services:
   web:
     build:
-      context: Dockerfile # Usar el contexto actual (donde se encuentra el Dockerfile)
+      context: . # Usar el contexto actual (donde se encuentra el Dockerfile)
     ports:
       - "5000:5000"  # Mapear el puerto 5000 del contenedor al puerto 5000 del host
